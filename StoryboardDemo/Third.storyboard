@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="m7w-T2-7N3">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="9Ky-LE-dC6">
+            <objects>
+                <viewController id="m7w-T2-7N3" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="Oq9-Sp-WZP"/>
+                        <viewControllerLayoutGuide type="bottom" id="tVg-Qb-tHD"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="fUa-hk-pvh">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="otr-Me-SVf">
+                                <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                            </view>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="otr-Me-SVf" firstAttribute="leading" secondItem="fUa-hk-pvh" secondAttribute="leading" id="5Ku-5o-jxe"/>
+                            <constraint firstItem="tVg-Qb-tHD" firstAttribute="top" secondItem="otr-Me-SVf" secondAttribute="bottom" id="Qh8-8J-vXp"/>
+                            <constraint firstItem="otr-Me-SVf" firstAttribute="top" secondItem="Oq9-Sp-WZP" secondAttribute="bottom" id="R1W-z8-q08"/>
+                            <constraint firstAttribute="trailing" secondItem="otr-Me-SVf" secondAttribute="trailing" id="Xz4-gb-uZO"/>
+                            <constraint firstItem="otr-Me-SVf" firstAttribute="top" secondItem="Oq9-Sp-WZP" secondAttribute="bottom" id="nVm-oh-1Jj"/>
+                            <constraint firstItem="tVg-Qb-tHD" firstAttribute="top" secondItem="otr-Me-SVf" secondAttribute="bottom" id="qHr-b0-ESw"/>
+                            <constraint firstItem="otr-Me-SVf" firstAttribute="leading" secondItem="fUa-hk-pvh" secondAttribute="leading" id="slt-M9-vLW"/>
+                            <constraint firstAttribute="trailing" secondItem="otr-Me-SVf" secondAttribute="trailing" id="zh7-01-w9D"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="otr-Me-SVf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <exclude reference="5Ku-5o-jxe"/>
+                                <exclude reference="R1W-z8-q08"/>
+                                <exclude reference="Xz4-gb-uZO"/>
+                                <exclude reference="nVm-oh-1Jj"/>
+                                <exclude reference="slt-M9-vLW"/>
+                                <exclude reference="zh7-01-w9D"/>
+                                <exclude reference="Qh8-8J-vXp"/>
+                                <exclude reference="qHr-b0-ESw"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=regular-widthClass=compact">
+                            <mask key="subviews">
+                                <include reference="otr-Me-SVf"/>
+                            </mask>
+                            <mask key="constraints">
+                                <include reference="5Ku-5o-jxe"/>
+                                <include reference="R1W-z8-q08"/>
+                                <include reference="Xz4-gb-uZO"/>
+                                <exclude reference="nVm-oh-1Jj"/>
+                                <exclude reference="slt-M9-vLW"/>
+                                <exclude reference="zh7-01-w9D"/>
+                                <include reference="Qh8-8J-vXp"/>
+                                <exclude reference="qHr-b0-ESw"/>
+                            </mask>
+                        </variation>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TPi-eM-s1l" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="357" y="378.75"/>
+        </scene>
+    </scenes>
+</document>
