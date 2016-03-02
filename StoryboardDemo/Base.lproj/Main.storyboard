@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9059" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jfu-9S-wqO">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="jfu-9S-wqO">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+        <capability name="Alignment constraints with different attributes" minToolsVersion="5.1"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <scenes>
@@ -15,15 +16,14 @@
                         <viewControllerLayoutGuide type="bottom" id="mb9-Id-DoY"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="iG1-fw-e8D">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="CI1-0d-CvF">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.5" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="CI1-0d-CvF" firstAttribute="leading" secondItem="iG1-fw-e8D" secondAttribute="leadingMargin" constant="-20" id="JLi-Vt-aDp">
@@ -50,6 +50,8 @@
                                 <exclude reference="CI1-0d-CvF"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="QDr-Fh-A0z"/>
+                                <exclude reference="rZV-mo-hDX"/>
                                 <exclude reference="JLi-Vt-aDp"/>
                                 <exclude reference="KNz-sJ-Hke"/>
                                 <exclude reference="Nt9-5m-Xbf"/>
@@ -58,8 +60,6 @@
                                 <exclude reference="l8i-cp-bBn"/>
                                 <exclude reference="tE1-lJ-ESp"/>
                                 <exclude reference="yeI-ZI-ifO"/>
-                                <exclude reference="QDr-Fh-A0z"/>
-                                <exclude reference="rZV-mo-hDX"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -67,6 +67,8 @@
                                 <include reference="CI1-0d-CvF"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="QDr-Fh-A0z"/>
+                                <exclude reference="rZV-mo-hDX"/>
                                 <exclude reference="JLi-Vt-aDp"/>
                                 <exclude reference="KNz-sJ-Hke"/>
                                 <exclude reference="Nt9-5m-Xbf"/>
@@ -75,8 +77,6 @@
                                 <exclude reference="l8i-cp-bBn"/>
                                 <exclude reference="tE1-lJ-ESp"/>
                                 <include reference="yeI-ZI-ifO"/>
-                                <include reference="QDr-Fh-A0z"/>
-                                <exclude reference="rZV-mo-hDX"/>
                             </mask>
                         </variation>
                     </view>
@@ -101,15 +101,14 @@
                         <viewControllerLayoutGuide type="bottom" id="GhV-Gb-Gy7"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="bYg-Hb-1ge">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1iy-iN-RV1">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <animations/>
                                 <color key="backgroundColor" red="0.60000002379999995" green="0.40000000600000002" blue="0.20000000300000001" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="1iy-iN-RV1" secondAttribute="trailing" id="PeK-Oc-HAD"/>
@@ -122,10 +121,10 @@
                                 <exclude reference="1iy-iN-RV1"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="fie-m3-61g"/>
                                 <exclude reference="PeK-Oc-HAD"/>
                                 <exclude reference="mTI-mq-hwH"/>
                                 <exclude reference="xso-Dg-epb"/>
-                                <exclude reference="fie-m3-61g"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -133,10 +132,10 @@
                                 <include reference="1iy-iN-RV1"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="fie-m3-61g"/>
                                 <include reference="PeK-Oc-HAD"/>
                                 <include reference="mTI-mq-hwH"/>
                                 <include reference="xso-Dg-epb"/>
-                                <include reference="fie-m3-61g"/>
                             </mask>
                         </variation>
                     </view>
@@ -152,7 +151,6 @@
                     <tabBar key="tabBar" contentMode="scaleToFill" id="48d-5r-76N">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                     </tabBar>
                     <connections>
@@ -179,11 +177,9 @@
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0Pf-Ip-ixG">
                                 <rect key="frame" x="0.0" y="0.0" width="240" height="128"/>
-                                <animations/>
                                 <color key="backgroundColor" red="1" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                             </view>
                         </subviews>
-                        <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="0Pf-Ip-ixG" secondAttribute="bottom" id="R6c-25-Nki"/>
@@ -196,10 +192,10 @@
                                 <exclude reference="0Pf-Ip-ixG"/>
                             </mask>
                             <mask key="constraints">
+                                <exclude reference="R6c-25-Nki"/>
                                 <exclude reference="dge-ey-0XW"/>
                                 <exclude reference="e8W-Y2-foi"/>
                                 <exclude reference="yZE-am-st7"/>
-                                <exclude reference="R6c-25-Nki"/>
                             </mask>
                         </variation>
                         <variation key="heightClass=regular-widthClass=compact">
@@ -207,10 +203,10 @@
                                 <include reference="0Pf-Ip-ixG"/>
                             </mask>
                             <mask key="constraints">
+                                <include reference="R6c-25-Nki"/>
                                 <include reference="dge-ey-0XW"/>
                                 <include reference="e8W-Y2-foi"/>
                                 <include reference="yZE-am-st7"/>
-                                <include reference="R6c-25-Nki"/>
                             </mask>
                         </variation>
                     </view>
@@ -235,7 +231,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="lKH-4T-ztX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -255,7 +250,6 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="HR2-Ow-bpR">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
-                        <animations/>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
